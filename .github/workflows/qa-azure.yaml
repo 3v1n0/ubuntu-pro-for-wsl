@@ -27,7 +27,7 @@ jobs:
           fetch-tags: true
           fetch-depth: 0
       - name: Build debian package
-        uses: 3v1n0/desktop-engineering/gh-actions/common/build-debian@build-deb-linter
+        uses: 3v1n0/desktop-engineering/gh-actions/common/build-debian@source-prepare-command
         with:
           source-dir: wsl-pro-service
           token: ${{ secrets.GITHUB_TOKEN }}
